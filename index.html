@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter version Material Design</title>
+    <link href="./bundle-main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Temperature Unit Converter ver.Material Design</h1>
+    </header>
+    
+    <main id="app">
+        <div id="control-area">
+            <button class="mdc-button convert-button">
+                <div class="mdc-button__ripple mdc-theme--surface"></div>
+                <span class="mdc-button__label">Convert</span>
+             </button>
+
+            <div id="unit-component">
+                <label>Input Unit:</label>
+                <label for="unit-switch">C</label>
+                <div class="mdc-switch unit-switch">
+                    <div class="mdc-switch__track"></div>
+                    <div class="mdc-switch__thumb-underlay">
+                      <div class="mdc-switch__thumb"></div>
+                      <input type="checkbox" id="unit-switch" class="mdc-switch__native-control" role="switch" aria-checked="false">
+                    </div>
+                  </div>
+                  <label for="unit-switch">F</label>
+            </div>
+        </div>
+
+        <div id="input-area">
+            <div id="input-component">
+                <label class="mdc-text-field mdc-text-field--outlined input-temperature">
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch">
+                        <span class="mdc-floating-label" id="my-label-id">Input temperature:</span>
+                      </span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input id="temperature-input" type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                  </label>
+            </div>
+
+            <div id="result-component">
+                <label>Result:</label>
+                <span id="result"></span>
+            </div>
+        </div>
+    </main>
+    <script src="bundle.js" ></script>
+</body>
+</html>

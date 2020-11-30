@@ -1,0 +1,86 @@
+@use "@material/button";
+@use "@material/ripple";
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/switch";
+@include button.core-styles;
+@include textfield.core-styles;
+@include switch.core-styles;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+body{
+    width: 80%;
+    border: 2px solid rgba(255, 213, 1, 0.842);
+    border-radius: 20px;
+    margin: 2em 20em 0 10em;
+    font-family: 'Righteous', cursive;
+    background-color:rgb(32, 29, 47);
+}
+h1{
+    color: rgba(255, 213, 1, 0.842);
+}
+/* MD-button style */
+.convert-button{
+    font-family: 'Righteous', cursive;
+    @include button.container-fill-color(rgba(255, 213, 1, 0.842));
+    @include button.ink-color(rgb(32, 29, 47));
+    margin-left: 1em;
+    border-radius: 20px;
+    height: 2em;
+}
+header{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+label{
+    color: rgba(255, 213, 1, 0.842);
+}
+/* MD-switch style */
+.unit-switch{
+    @include switch.toggled-on-color(rgba(255, 213, 1, 0.842));
+}
+
+/* MD-textfield style */
+.input-temperature{
+    @include textfield.caret-color(rgba(255, 213, 1, 0.842));
+    @include textfield.ink-color(rgba(255, 213, 1, 0.842));
+    @include textfield.label-color(rgba(255, 213, 1, 0.842));
+    @include textfield.placeholder-color(rgba(255, 213, 1, 0.842));
+    @include textfield.focused-outline-color(rgba(255, 213, 1, 0.842));
+    @include textfield.outline-color(rgb(32, 29, 47));
+    @include textfield.hover-outline-color(rgb(32, 29, 47));
+}
+
+#temperature-input {
+    font-family: 'Righteous', cursive;
+    outline: 0;
+    border-width: 0 0 2px;
+    margin-left: 0.2em;
+    width: 8em;
+    color:rgba(255, 213, 1, 0.842);
+    border-color:rgba(255, 213, 1, 0.842);
+    background-color: transparent;
+    transition: border-color 1s ease-out;
+  }
+
+#input-component{
+    display: inline-block;
+    margin: 1em 10em 1em 10em
+}
+#result-component{
+    display: inline-block;
+    margin: 1em 1em 1em 1m;
+}
+#unit-component{
+    display: inline-block;
+    float: right;
+    margin-right: 1em;
+}
+#result{
+    color: rgba(255, 213, 1, 0.842);
+}

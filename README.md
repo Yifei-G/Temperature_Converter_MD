@@ -16,4 +16,8 @@ This project uses webpack-dev-server, to run the project locally you need:
 
 If you don't have npm, please install it from [here](https://www.npmjs.com/get-npm)
 
+```
+npm run start
+```
+
 If everthing works fine, the project will be lauched on localhost:8080.
